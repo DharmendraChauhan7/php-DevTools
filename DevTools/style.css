@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    width: 100%;
+}
+/* Navigation Bar */
+.navbar{
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    height: 50px;
+    background: rgb(65, 64, 64);
+}
+.logo img{
+    height: 40px;
+    margin: 10px;
+    cursor: pointer;
+    filter: drop-shadow(1px 1px 2px rgb(16, 205, 238));
+}
+.searchbar{
+    border-radius: 7px;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+.searchbar input{
+    background: none;
+    border: 0px;
+    border-bottom: 1px solid rgb(129, 123, 123);
+    outline: none;
+    color: white;
+}
+.searchbar #searchbtn{
+    background: none;
+    color: rgb(129, 123, 123);
+    font-weight: 500;
+    padding: 5px 17px;
+    border: 1px solid rgb(129, 123, 123); 
+    border-radius: 7px;   
+    cursor: pointer;
+    margin-left:10px;
+}
+#searchbtn:hover{
+    background: rgb(16, 205, 238);
+    box-shadow:0px 0px 5px rgb(16, 205, 238);
+    color:white;
+    transition:.5s;
+    outline:0;
+}
+.links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links li{
+    margin-top: 12px;
+}
+.links li a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 20px;
+}
+.menubar{
+    width: 100%;
+    height: 50px;
+    background: rgb(77, 74, 74);
+    position: absolute;
+    margin-top: 100px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    display: none;
+    cursor: pointer;
+}
+.menubtn{
+    border: 1px solid rgb(54, 198, 255);
+    border-radius: 4px;
+    margin: 10px;
+}
+.menubtn:hover{
+    box-shadow: 0 0 3px rgb(54, 198, 255);
+    transition: .5s;
+}
+.btn img{
+    height: 40px;
+}
+/* Index.html */
+.banner{
+    background-image: url(/IMG/devtools_bg.jpg);
+    background-size: cover;
+    width: 100%;
+    min-height: 95vh;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-top: 100px;
+    margin-right: 20px;
+    padding: 12px;
+}
+
+.col h1{
+    font-size: 80px;
+    color: rgb(96, 137, 143);
+}
+.col h4,h3{
+    margin-top: 20px;
+}
+.col .counter{
+    display: flex;
+    margin-top: 20px;
+}
+.counter a{
+    font-size: 20px;
+    font-weight:bold;
+    margin-right: 12px;
+    text-decoration:none;
+    color:black;
+    border:0px solid black;
+    border-radius:7px;
+    box-shadow:0 0 5px black;
+    padding:5px;
+}
+/* tools.html */
+.tool-col{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+.heading img{
+    height: 80px;
+    border-radius: 12px;
+    display: block;
+    margin: auto;
+    margin-top: 70px;
+}
+.tool-row{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 20px;
+    flex-basis: auto;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.card{
+    background: rgb(245, 245, 245);
+    box-shadow: 3px 0px 10px black;
+    max-width: 300px;
+    min-height: 200px;
+    margin: 30px 20px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.card:hover{
+    box-shadow: 0px 3px 10px black;
+    transform: translateY(-10px);
+    transition: .5s;
+    color: rgb(6, 95, 250);
+}
+.tool-img img{
+    width: 100%;
+}
+.card-info{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding-left: 12px;
+}
+.toolname{
+    font-size: 30px;
+    font-weight: bold;
+}
+.tooldetail{
+    margin-top: 5px;
+}
+.tool-btn{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 3px 7px;
+    font-size: 20px;
+    border-radius: 3px;
+    border: 0px solid;
+    box-shadow: 2px 0 3px;
+}
+.tool-btn a{
+    color: rgb(75, 75, 75);
+    text-decoration: none;
+}
+.tool-btn:hover{
+    box-shadow: 0 2px 3px black;
+    transition: .5s;
+}
+.footer{
+    background: #000;
+    color: white;
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+/* Responsive Code */
+@media screen and (max-width:600px) {
+    .logo img{
+        height: 30px;
+    }
+    .searchbar{
+        display: none;
+    }
+    .btn img{
+        height: 30px;
+    }
+    .col{
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width:1000px) {
+    .heading img{
+
+        height: 50px;
+    }
+}
